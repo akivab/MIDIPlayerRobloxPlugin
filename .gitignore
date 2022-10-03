@@ -1,0 +1,12 @@
+# Project place file
+/MIDIPlayerRobloxPlugin.rbxlx
+/TestEZ\ MIDIPlayerRobloxPlugin.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+# Added by cargo
+
+.DS_Store
+/target

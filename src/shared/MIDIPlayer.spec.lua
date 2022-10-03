@@ -1,0 +1,17 @@
+print("Opened MIDIPlayer.spec.lua")
+return function()
+    print("Running MIDIPlayer.spec.lua")
+    local SongData = require(script.Parent.SongData)
+    local Base64 = require(script.Parent.Base64)
+    local Song = require(script.Parent.Song)
+    local MIDIPlayer = require(script.Parent.MIDIPlayer)
+    local midiData = Base64.decode(SongData.StairwayToHeaven)
+    local song = Song.new(midiData)
+    local midiPlayer = MIDIPlayer.new(song)
+
+    describe("Play back a song!", function()
+        it("Should play stairway to heaven", function()
+            midiPlayer:Play()
+        end)
+    end)
+end

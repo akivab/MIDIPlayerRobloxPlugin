@@ -1,0 +1,3 @@
+[submodule "vendor/LuaMidi"]
+	path = vendor/LuaMidi
+	url = git@github.com:PedroAlvesV/LuaMidi.git

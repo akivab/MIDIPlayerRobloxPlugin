@@ -1,0 +1,48 @@
+{
+  "name": "TestEZ MIDIPlayerRobloxPlugin",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "TestEZ": {
+        "$path": "vendor/TestEZ/src"
+      },
+      "Common": {
+        "$path": "src/shared"
+      }
+    },
+
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+
+      "Tests": {
+        "$path": "src/test/runner.server.lua"
+      },
+      "Server": {
+        "$path": "src/server"
+      }
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/client"
+        }
+      }
+    },
+
+    "HttpService": {
+      "$className": "HttpService",
+      "$properties": {
+        "HttpEnabled": true
+      }
+    },
+
+    "Players": {
+      "$className": "Players",
+      "$properties": {
+        "CharacterAutoLoads": false
+      }
+    }
+  }
+}
